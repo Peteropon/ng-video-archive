@@ -71,7 +71,7 @@ export class BandService {
                 ]
             },
             {
-                "bandName":"Trip hop @ APΘ",
+                "bandName":"Trip hop @ ΑΠΘ",
                 "path":"triphopapth",
                 "videos":[
                     {
@@ -139,7 +139,7 @@ export class BandService {
                 ]
             },
             {
-                "bandName": "905 @ APΘ",
+                "bandName": "905 @ ΑΠΘ",
                 "path": "905apth",
                 "videos": [
                     {
@@ -223,7 +223,7 @@ export class BandService {
                 ]
             },    
             {
-                "bandName": "Mano Negra Tribute @ APΘ",
+                "bandName": "Mano Negra Tribute @ ΑΠΘ",
                 "path": "manonegraapth",
                 "videos": [
                     {
@@ -320,7 +320,7 @@ export class BandService {
                 ]
             },    
             {
-                "bandName": "Ελληνικο Ροκ @ APΘ",
+                "bandName": "Ελληνικο Ροκ @ ΑΠΘ",
                 "path": "elrockapth",
                 "videos": [
                     {

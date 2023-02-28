@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IBand } from './band';
-import { BandService } from './band.service';
+import { BandService } from './band-list.service';
 
 @Component({
   selector: 'va-band-list',
