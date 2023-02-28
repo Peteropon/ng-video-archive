@@ -1,7 +1,7 @@
 import { IVideo } from "./video";
 
 export interface IBand {
-    bandname: string;
+    bandName: string;
     path: string;
     videos: IVideo[]
 }
