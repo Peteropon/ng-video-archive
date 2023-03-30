@@ -7,19 +7,15 @@ import { BandListComponent } from './band-list/band-list.component';
 import { BandComponent } from './band/band.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BandListComponent,
-    BandComponent
-  ],
+  declarations: [AppComponent, BandListComponent, BandComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: '', component: BandListComponent},
-      {path: ':path', component: BandComponent}
-    ])
+      { path: '', component: BandListComponent },
+      { path: ':path', component: BandComponent },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

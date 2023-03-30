@@ -1,7 +1,7 @@
-import { IVideo } from "./video";
+import { IVideo } from './video';
 
 export interface IBand {
-    bandName: string;
-    path: string;
-    videos: IVideo[]
+  bandName: string;
+  path: string;
+  videos: IVideo[];
 }
