@@ -1,4 +1,4 @@
 <p>band-list works!</p>
 <div class="band-list-container" *ngFor="let band of bands">
-  <a class="band" [routerLink]="['', band.path]">{{ band.bandName }}</a>
+  <a class="band" [routerLink]="['/bands', band.path]">{{ band.bandName }}</a>
 </div>

@@ -25,10 +25,20 @@ export class BandComponent implements OnInit {
     const path = this.route.snapshot.paramMap.get('path');
     if (path) {
       this.band = this.bandService.getBand(path);
+      const videoInfo = this.band?.videos.forEach((video) => {
+        const updatedVideo = {
+          ...video,
+          videoId: this.extractVideoId(video.url),
+        };
+      });
     }
   }
 
   onBack(): void {
-    this.router.navigate(['']);
+    this.router.navigate(['/bands']);
+  }
+
+  extractVideoId(url: string) {
+    return url.substring(url.indexOf('=') + 1);
   }
 }
