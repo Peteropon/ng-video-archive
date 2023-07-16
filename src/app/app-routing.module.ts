@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { BandListComponent } from './band-list/band-list.component';
+import { BandComponent } from './band/band.component';
 
-const routes: Routes = [{ path: 'bands', component: BandListComponent }];
+const routes: Routes = [
+  { path: 'bands', component: BandListComponent, pathMatch: 'full' },
+  { path: 'bands/:path', component: BandComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
