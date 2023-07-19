@@ -12,11 +12,15 @@
 }
 
 html {
-    color-scheme: light;
+    color-scheme: light dark;
 }
 
 body {
     min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
 }
 
 img,
@@ -34,3 +38,5 @@ button,
 select {
     font: inherit;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
