@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IBand } from '../band-list/band';
 import { BandService } from '../band-list/band-list.service';
+import { VideoDialogComponent } from '../video-dialog/video-dialog.component';
 
 @Component({
   selector: 'va-band',
@@ -18,7 +20,8 @@ export class BandComponent implements OnInit {
   constructor(
     private bandService: BandService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -40,5 +43,9 @@ export class BandComponent implements OnInit {
 
   extractVideoId(url: string) {
     return url.substring(url.indexOf('=') + 1);
+  }
+
+  openDialog(url: string) {
+    this.dialog.open(VideoDialogComponent, { data: { url: url } });
   }
 }

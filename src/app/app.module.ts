@@ -8,10 +8,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { VideoDialogComponent } from './video-dialog/video-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [AppComponent, BandListComponent, BandComponent, LandingPageComponent, VideoDialogComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    BandListComponent,
+    BandComponent,
+    LandingPageComponent,
+    VideoDialogComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
