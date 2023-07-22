@@ -1,6 +1,5 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { IVideo } from '../band-list/video';
 
 @Component({
   selector: 'va-video-dialog',

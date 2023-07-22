@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  MatDialog,
-  MAT_DIALOG_DATA,
-  MatDialogConfig,
-} from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IBand } from '../band-list/band';
 import { BandService } from '../band-list/band-list.service';
@@ -43,10 +39,15 @@ export class BandComponent implements OnInit {
     return url.substring(url.indexOf('=') + 1);
   }
 
-  openDialog(url: string) {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = this.extractVideoId(url);
-
-    this.dialog.open(VideoDialogComponent, dialogConfig);
+  openDialog(
+    url: string,
+    enterAnimationDuration: string,
+    exitAnimationDuration: string
+  ) {
+    this.dialog.open(VideoDialogComponent, {
+      data: this.extractVideoId(url),
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
   }
 }
