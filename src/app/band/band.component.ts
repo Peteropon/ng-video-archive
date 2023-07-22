@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {
+  MatDialog,
+  MAT_DIALOG_DATA,
+  MatDialogConfig,
+} from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IBand } from '../band-list/band';
 import { BandService } from '../band-list/band-list.service';
@@ -28,12 +32,6 @@ export class BandComponent implements OnInit {
     const path = this.route.snapshot.paramMap.get('path');
     if (path) {
       this.band = this.bandService.getBand(path);
-      const videoInfo = this.band?.videos.forEach((video) => {
-        const updatedVideo = {
-          ...video,
-          videoId: this.extractVideoId(video.url),
-        };
-      });
     }
   }
 
@@ -46,6 +44,9 @@ export class BandComponent implements OnInit {
   }
 
   openDialog(url: string) {
-    this.dialog.open(VideoDialogComponent, { data: { url: url } });
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.data = this.extractVideoId(url);
+
+    this.dialog.open(VideoDialogComponent, dialogConfig);
   }
 }
