@@ -9,6 +9,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { VideoDialogComponent } from './video-dialog/video-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatCardModule,
     YouTubePlayerModule,
   ],
   providers: [],
