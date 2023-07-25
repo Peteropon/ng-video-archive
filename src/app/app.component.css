@@ -1,0 +1,18 @@
+.nav-container {
+    padding-block-end: 2em;
+    padding-block-start: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
