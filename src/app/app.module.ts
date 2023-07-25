@@ -10,6 +10,7 @@ import { VideoDialogComponent } from './video-dialog/video-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     BrowserAnimationsModule,
     MatDialogModule,
     MatCardModule,
+    MatButtonModule,
     YouTubePlayerModule,
   ],
   providers: [],
