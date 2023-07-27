@@ -11,9 +11,9 @@
     font: inherit;
 }
 
-html {
+/* html {
     color-scheme: light dark;
-}
+} */
 
 body {
     min-height: 100vh;
@@ -38,5 +38,13 @@ button,
 select {
     font: inherit;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
