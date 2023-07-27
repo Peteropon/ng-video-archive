@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     BandComponent,
     LandingPageComponent,
     VideoDialogComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
