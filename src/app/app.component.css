@@ -1,6 +1,7 @@
 .nav-container {
     padding-block-end: 2em;
     padding-block-start: 2rem;
+    background-color: hsl(340, 82%, 52%);
 }
 
 .nav-list {
@@ -11,6 +12,8 @@
 
 .nav-item {
     cursor: pointer;
+    font-size: 2em;
+    color: whitesmoke;
 }
 
 li {
